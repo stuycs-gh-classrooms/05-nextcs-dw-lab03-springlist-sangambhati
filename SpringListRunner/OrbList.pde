@@ -43,6 +43,9 @@ class OrbList {
     Insert o to the beginning of the list.
     =========================*/
   void addFront(OrbNode o) {
+    
+  
+    // append o to the beginning of the list
 
   }//addFront
 
@@ -59,6 +62,12 @@ class OrbList {
     =========================*/
   void populate(int n, boolean ordered) {
 
+    for (int i = 0; i < n; i++) {
+    if (ordered) {
+    orb(i) ; // same y coordinate, spaced spring_lentgh apart
+    
+    }
+    }
   }//populate
 
   /*===========================
@@ -88,6 +97,10 @@ class OrbList {
     to apply gravity crrectly.
     =========================*/
   void applyGravity(Orb other, float gConstant) {
+    for (i = 0; i < Orblist.length ; i++) {
+    
+    
+    }
 
   }//applySprings
 
@@ -96,7 +109,11 @@ class OrbList {
 
     Call run on each node in the list.
     =========================*/
-  void run(boolean boucne) {
+  void run(boolean bounce) {
+    for (i = 0; i < Orblist.length ; i++) {
+    
+    
+    }
 
   }//applySprings
 
@@ -123,9 +140,12 @@ class OrbList {
     the Orb class (line 115).
     =========================*/
   OrbNode getSelected(int x, int y) {
-
+    //if (orbNode = (x,y) ) {}
+    
+    else {
     return null;
-  }//getSelected
+    } 
+}//getSelected
 
   /*===========================
     removeNode(OrbNode o)
@@ -136,5 +156,7 @@ class OrbList {
     position of o in the list.
     =========================*/
   void removeNode(OrbNode o) {
+    
+    // remove o from list
   }
 }//OrbList
